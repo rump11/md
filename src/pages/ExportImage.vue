@@ -25,14 +25,14 @@ export default {
     return {
       isLoading: true,
       isExporting: false,
-      pdata: getDocContent(getActiveDocId()) || ''
+      pdata: getDocContent(getActiveDocId()) || '',
     }
   },
 
   created() {},
 
   components: {
-    PreviewVditor
+    PreviewVditor,
   },
 
   mounted() {},
@@ -70,7 +70,7 @@ export default {
       const filename = getExportFileName()
       this.exportAndDownloadImg(element, filename)
       trackEvent('export_image_submit', 'export', filename)
-    }
-  }
+    },
+  },
 }
 </script>

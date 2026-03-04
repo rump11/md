@@ -94,13 +94,13 @@ const handleCaptureSvg = (targetElem) => {
         ignoreMouse: true,
         ignoreAnimation: true,
         ignoreDimensions: false,
-        ignoreClear: true
+        ignoreClear: true,
       })
 
       // 保存原始节点信息以便恢复
       nodesToRecover.push({
         parent: parentNode,
-        child: node
+        child: node,
       })
 
       // 临时移除SVG节点
@@ -109,7 +109,7 @@ const handleCaptureSvg = (targetElem) => {
       // 添加canvas替代SVG
       nodesToRemove.push({
         parent: parentNode,
-        child: canvas
+        child: canvas,
       })
       parentNode.appendChild(canvas)
     } catch (error) {
@@ -134,7 +134,7 @@ export const generateScreenshot = async (targetDom) => {
     useCORS: true, // 启用CORS支持
     backgroundColor: '#fefefe',
     imageTimeout: 0, // 禁用图像超时
-    logging: false
+    logging: false,
   }
   const origCanvas = await html2canvas(targetDom, options)
   const roundCanvas = drawRoundedRec(origCanvas, scale)

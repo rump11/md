@@ -100,7 +100,7 @@ export function createDocument(title = '未命名文档') {
     id: generateId(),
     title: String(title || '未命名文档').trim() || '未命名文档',
     createdAt: now,
-    updatedAt: now
+    updatedAt: now,
   }
   const list = getDocuments()
   list.unshift(doc)

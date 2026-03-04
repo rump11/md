@@ -18,7 +18,7 @@ const routerInstance = new Router({
   base: '/',
   linkActiveClass: 'active',
   scrollBehavior: () => ({ y: 0 }),
-  routes: RoutesMapConfig.concat(commonRoutesMap)
+  routes: RoutesMapConfig.concat(commonRoutesMap),
 })
 
 Object.values(beforeEachHooks).forEach((hook) => {

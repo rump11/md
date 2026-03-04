@@ -16,7 +16,7 @@ export default {
 
   data() {
     return {
-      isLoading: true
+      isLoading: true,
     }
   },
 
@@ -24,8 +24,8 @@ export default {
     pdata: {
       type: String,
       required: true,
-      default: ''
-    }
+      default: '',
+    },
   },
 
   created() {
@@ -47,8 +47,8 @@ export default {
         mode: 'sv',
         preview: {
           delay: 1000,
-          show: true
-        }
+          show: true,
+        },
       }
       this.vditor = new Vditor('khaleesi', options)
       this.$nextTick(() => {
@@ -58,8 +58,8 @@ export default {
 
     setDefaultText() {
       localStorage.setItem('vditorkhaleesi', this.pdata)
-    }
-  }
+    },
+  },
 }
 </script>
 

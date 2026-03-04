@@ -8,7 +8,7 @@ describe('Arrow.vue', () => {
   it('renders props.direction when passed', () => {
     const parpDirection = 'right'
     const wrapper = shallowMount(Arrow, {
-      propsData: { direction: parpDirection }
+      propsData: { direction: parpDirection },
     })
     expect(wrapper.classes()).toContain(parpDirection)
   })
@@ -18,7 +18,7 @@ describe('Arrow.vue', () => {
     const parpDirection = '~~left'
     const defaultDirection = 'left'
     const wrapper = shallowMount(Arrow, {
-      propsData: { direction: parpDirection }
+      propsData: { direction: parpDirection },
     })
     expect(wrapper.classes()).toContain(defaultDirection)
     /* const compClassListStr = wrapper
@@ -32,7 +32,7 @@ describe('Arrow.vue', () => {
     // color default Vaule is [#479537]
     const propColor = '#666666'
     const wrapper = shallowMount(Arrow, {
-      propsData: { color: propColor }
+      propsData: { color: propColor },
     })
     const compBorderColor = wrapper.find('.arrow-component').element.style.borderColor
     expect(compBorderColor).toBe(propColor)
@@ -43,7 +43,7 @@ describe('Arrow.vue', () => {
     const propColor = '#666 666#'
     const defaultColor = '#479537'
     const wrapper = shallowMount(Arrow, {
-      propsData: { color: propColor }
+      propsData: { color: propColor },
     })
     const compBorderColor = wrapper.find('.arrow-component').element.style.borderColor
     expect(compBorderColor).toBe(defaultColor)

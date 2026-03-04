@@ -10,7 +10,7 @@ export default {
       keywords:
         'vue,vue-cli3,webpack,vuex,vue-router,element-ui,TypeScript,ESLint,Prettier,Dayjs,Markdown,Jest,PWA,开箱即用,脚手架,模板',
       description:
-        '此为基于 Vue-Cli3 搭建的开箱即用 Vue 脚手架模版，致力于探究更高效地构建优质 Web 应用。'
+        '此为基于 Vue-Cli3 搭建的开箱即用 Vue 脚手架模版，致力于探究更高效地构建优质 Web 应用。',
     }
   },
 
@@ -32,23 +32,23 @@ export default {
         {
           vmid: 'og:image',
           property: 'og:image',
-          content: 'https://nice.lovejade.cn/logo.png'
+          content: 'https://nice.lovejade.cn/logo.png',
         },
         {
           vmid: 'og:keywords',
           property: 'og:keywords',
-          content: this.keywords
+          content: this.keywords,
         },
         {
           vmid: 'og:description',
           property: 'og:description',
-          content: this.description
-        }
-      ]
+          content: this.description,
+        },
+      ],
     }
   },
 
   mounted() {},
 
-  methods: {}
+  methods: {},
 }
