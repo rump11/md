@@ -77,25 +77,25 @@ export default {
   name: 'Sidebar',
 
   components: {
-    Icon,
+    Icon
   },
 
   props: {
     collapsed: {
       type: Boolean,
-      default: false,
+      default: false
     },
     activeDocId: {
       type: String,
-      default: null,
-    },
+      default: null
+    }
   },
 
   data() {
     return {
       documents: [],
       editingId: null,
-      editingTitle: '',
+      editingTitle: ''
     }
   },
 
@@ -146,7 +146,7 @@ export default {
       MessageBox.confirm('确定要删除该文档吗？删除后无法恢复。', '删除文档', {
         confirmButtonText: '删除',
         cancelButtonText: '取消',
-        type: 'warning',
+        type: 'warning'
       })
         .then(() => {
           deleteDocument(doc.id)
@@ -157,8 +157,8 @@ export default {
         .catch(() => {
           trackEvent('sidebar_doc_delete_cancel', 'sidebar', doc.id)
         })
-    },
-  },
+    }
+  }
 }
 </script>
 

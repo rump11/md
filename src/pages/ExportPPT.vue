@@ -27,7 +27,7 @@ export default {
 
   data() {
     return {
-      savedMdContent: '',
+      savedMdContent: ''
     }
   },
 
@@ -58,23 +58,23 @@ export default {
             src: `${revealSourcePath}/plugin/markdown/marked.js`,
             condition: function () {
               return !!document.querySelector('[data-markdown]')
-            },
+            }
           },
           {
             src: `${revealSourcePath}/plugin/markdown/markdown.js`,
             condition: function () {
               return !!document.querySelector('[data-markdown]')
-            },
+            }
           },
           { src: `${revealSourcePath}/plugin/highlight/highlight.js`, async: true },
           { src: `${revealSourcePath}/plugin/search/search.js`, async: true },
           { src: `${revealSourcePath}/plugin/zoom-js/zoom.js`, async: true },
-          { src: `${revealSourcePath}/plugin/notes/notes.js`, async: true },
-        ],
+          { src: `${revealSourcePath}/plugin/notes/notes.js`, async: true }
+        ]
       })
-    },
+    }
     /* ---------------------Callback Event--------------------- */
-  },
+  }
 }
 </script>
 

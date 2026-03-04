@@ -34,7 +34,7 @@ import {
   getActiveDocId,
   setActiveDocId,
   getDocContent,
-  saveDocContent,
+  saveDocContent
 } from '@helper/storage'
 import { trackEvent } from '@helper/analytics'
 
@@ -50,7 +50,7 @@ export default {
       vditor: null,
       activeDocId: null,
       sidebarCollapsed: window.innerWidth <= 960,
-      saveTimer: null,
+      saveTimer: null
     }
   },
 
@@ -69,7 +69,7 @@ export default {
 
   components: {
     HeaderNav,
-    Sidebar,
+    Sidebar
   },
 
   mounted() {
@@ -108,7 +108,7 @@ export default {
         cache: { enable: false },
         preview: {
           delay: 100,
-          show: !this.isMobile,
+          show: !this.isMobile
         },
         outline: true,
         upload: {
@@ -122,20 +122,20 @@ export default {
             request.open('POST', 'https://sm.ms/api/upload')
             request.onload = that.onloadCallback
             request.send(formData)
-          },
+          }
         },
-        input: (value) => {
-          that.debouncedSave(value)
+        input: () => {
+          that.debouncedSave()
         },
         after: () => {
           const content = getDocContent(this.activeDocId) || defaultText
           this.vditor.setValue(content)
           this.vditor.focus()
-        },
+        }
       }
       this.vditor = new Vditor('vditor', options)
     },
-    debouncedSave(value) {
+    debouncedSave() {
       if (this.saveTimer) clearTimeout(this.saveTimer)
       this.saveTimer = setTimeout(() => {
         if (this.activeDocId && this.vditor && typeof this.vditor.getValue === 'function') {
@@ -178,7 +178,7 @@ export default {
         trackEvent('editor_image_upload_error', 'editor', currentTarget.statusText)
         return this.$message({
           type: 'error',
-          message: currentTarget.status + ' ' + currentTarget.statusText,
+          message: currentTarget.status + ' ' + currentTarget.statusText
         })
       }
       let resp = JSON.parse(currentTarget.response)
@@ -187,7 +187,7 @@ export default {
         trackEvent('editor_image_upload_invalid', 'editor', resp.message)
         return this.$message({
           type: 'error',
-          message: resp.message,
+          message: resp.message
         })
       }
       if (resp.code === 'image_repeated') {
@@ -205,8 +205,8 @@ export default {
         this.vditor.setValue(content)
         this.vditor.focus()
       }
-    },
-  },
+    }
+  }
 }
 </script>
 

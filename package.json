@@ -61,8 +61,8 @@
     "svgo-loader": "2.2.1",
     "vue-svg-loader": "^0.12.0",
     "vue-template-compiler": "^2.5.17",
-    "webpack-bundle-analyzer": "3.5.0"
-    ,"cross-env": "^7.0.3"
+    "webpack-bundle-analyzer": "3.5.0",
+    "cross-env": "^7.0.3"
   },
   "babel": {
     "presets": [
