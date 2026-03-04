@@ -2,9 +2,7 @@
 
 export default `# [Arya](https://markdown.lovejade.cn/?utm_source=markdown.lovejade.cn&pid=about-arya) - 在线 Markdown 编辑器
 
-[Arya](https://markdown.lovejade.cn/?utm_source=markdown.lovejade.cn&pid=about-arya)，是一款基于 [Vue2](https://site.lovejade.cn/post/5b1a221c0526c920d6dfaada)、[Vditor](https://github.com/Vanessa219/vditor)，为未来而构建的在线 [Markdown](https://github.com/nicejade/nice-front-end-tutorial/blob/master/tutorial/markdown-tutorial.md) 编辑器；轻量且强大：内置粘贴 HTML 自动转换为 Markdown，支持流程图、甘特图、时序图、任务列表，可导出携带样式的图片、PDF、微信公众号特制的 HTML 等等。
-
->**微注**：[Arya](https://markdown.lovejade.cn/?utm_source=markdown.lovejade.cn&pid=about-arya) 另一大优点在于：编辑内容只会在您本地进行保存，不会上传您的数据至服务器，**绝不窥测用户个人隐私，可放心使用**；Github 源码：[markdown-online-editor](https://github.com/nicejade/markdown-online-editor)，部分功能仍在开发🚧，敬请期待。
+ >**微注**：[Arya](https://markdown.lovejade.cn/?utm_source=markdown.lovejade.cn&pid=about-arya) 另一大优点在于：编辑内容只会在您本地进行保存，不会上传您的数据至服务器，**绝不窥测用户个人隐私，可放心使用**；Github 源码：[markdown-online-editor](https://github.com/nicejade/markdown-online-editor)，部分功能仍在开发🚧，敬请期待。
 
 **背景初衷**：早期就有关注到由"黑客派"所出品的 [Vditor](https://github.com/Vanessa219/vditor)：一款为未来而构建的下一代 [Markdown](https://github.com/nicejade/nice-front-end-tutorial/blob/master/tutorial/markdown-tutorial.md) 编辑器。然，现而今市面上所存在的 \`Markdown\` 编辑器，或多或少都存在一些问题（或功能不全，或高级功能收费...），因此基于自身所需，加之 [Vditor](https://github.com/Vanessa219/vditor) 的强大，就诞生了做一款[在线 Markdown 编辑器](https://markdown.lovejade.cn/?utm_source=github.com) 的念头；取其名曰 [\`Arya\`（二丫）](https://quickapp.lovejade.cn/talking-game-of-thrones/?utm_source=markdown.lovejade.cn)。
 
